@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FasiChat Classroom - Creer un compte</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="assets/login.css">
+<style>
+  .register-box { max-width: 520px; margin: 40px auto; background: rgba(255,255,255,.92); border-radius: 16px; padding: 24px; }
+  .register-title { margin: 0 0 6px; font-size: 26px; font-weight: 700; }
+  .register-sub { margin: 0 0 18px; color: #4b5563; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="grid-lines"></div>
+<div class="orb orb-1"></div>
+
+<div class="register-box">
+  <h1 class="register-title">Creer un compte</h1>
+  <p class="register-sub">Version maquette : l'inscription est a connecter au backend PHP.</p>
+
+  <form>
+    <div class="form-group">
+      <label class="form-label">Nom complet</label>
+      <div class="input-wrapper">
+        <span class="input-icon"><i class="fa-regular fa-user"></i></span>
+        <input type="text" class="form-input" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Identifiant</label>
+      <div class="input-wrapper">
+        <span class="input-icon"><i class="fa-solid fa-id-card"></i></span>
+        <input type="text" class="form-input" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Role</label>
+      <div class="input-wrapper">
+        <span class="input-icon"><i class="fa-solid fa-user-tag"></i></span>
+        <select class="form-input" required>
+          <option>Etudiant</option>
+          <option>Enseignant</option>
+          <option>Assistant</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Mot de passe</label>
+      <div class="input-wrapper">
+        <span class="input-icon"><i class="fa-solid fa-key"></i></span>
+        <input type="password" class="form-input" minlength="6" required>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-login">Creer mon compte</button>
+  </form>
+
+  <div class="register-link" style="margin-top:16px;">
+    Deja inscrit ? <a href="login.html">Se connecter</a>
+  </div>
+</div>
+</body>
+</html>
